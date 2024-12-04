@@ -1,0 +1,136 @@
+@media screen and (max-width: 900px){
+    header .menu-desktop, header .btn-contato{
+        display: none;
+    }
+
+    header .btn-menu-mob{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 878px){
+
+    /*  Estilo responsivo da hero */
+    section.hero-site .txt-hero h1{
+        font-size: 2.6em;
+        line-height: 40px;
+        z-index: 1;
+    }
+    section.hero-site .txt-hero p{
+        font-size: 8px;
+    }
+    
+    section.hero-site .txt-hero p span{
+        display: inline;
+    }
+
+    /* ---------------------- */
+
+     /*  Estilo responsivo de sobre */
+     section.sobre-site .txt-sobre h1{
+        font-size: 2.6em;
+        line-height: 40px;
+    }
+    section.sobre-site .txt-sobre p{
+        font-size: 14px;
+    }
+    
+    section.sobre-site .txt-sobre p span{
+        display: inline;
+    }
+    .sobre-site .txt-sobre button{
+        font-size: 18px;
+    }
+
+    section.sobre-site .img-itens-sobre img{
+        width: 100%;        
+    }
+
+
+
+
+
+    /*  Estilo responsivo de sobre */
+
+    /* section.sobre-site .txt-sobre h1{
+        font-size: 2.6em;
+        line-height: 40px;
+    }
+    section.sobre-site .txt-sobre p{
+        font-size: 14px;
+    }
+    
+    section.sobre-site .txt-sobre p span{
+        display: inline;
+    }
+    .sobre-site .txt-sobre button{
+        font-size: 18px;
+    }
+
+    section.sobre-site .img-itens-sobre img{
+        width: 100%;        
+    }
+   */
+
+
+
+    /* ---------------------- */
+
+    /*  Estilo responsivo de filmes */
+    section.selecao-site .itens-container-selecao{
+        flex-direction: column;
+    }
+
+    section.selecao-site .itens-container-selecao .img-itens-selecao img{
+        width: 100%;
+    }
+
+    section.selecao .itens-container-selecao .txt-itens-selecao p{
+        margin-bottom: 20px;
+    }
+
+    section.selecao-site .itens-container-selecao .item-1{    
+        order: 1;
+    }        
+
+    section.selecao-site .itens-container-selecao .item-2{    
+        order: 0;
+    }        
+
+    /* -------------------------------------------*/
+    
+    /* Estilo responsivo de contato */
+    article.txt-contato, .icons-contato{
+        display: block;
+        width: 100%;
+    }
+
+    section.contato .txt-contato h3{
+        font-size: 1.8em;
+        line-height: 40px;
+        margin-top: 5px;
+    }
+
+    section.contato .txt-contato p{
+        margin-bottom: 0px;
+    }
+
+    section.contato .icons-contato button{
+        width: 100%;
+    }
+
+    /* -------------------------------- */
+
+    /* Estilo resposivo rodape */
+    footer .middle-footer a{
+        margin: 15 0px;
+        display: block;
+    }
+
+    footer .bottom-footer p{
+        font-size: 14px;
+
+    }
+
+}
+   

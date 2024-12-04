@@ -1,0 +1,552 @@
+/* @font-face {
+  font-family: trek;
+  src: url(/assets/fonts/Roddenberry-DgLm.ttf) format('truetype');
+  } */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: transparent;
+  height: 100vh;
+}
+
+html{
+  scroll-behavior: smooth ;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* Estilo do header */
+header{
+  width: 100%;
+  padding: 40px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .5s;
+}
+
+/* EStilo do botão de contato */
+header .btn-contato button{
+  font-size: 18px;
+  background-color: transparent;
+  border: 2px solid #033e78a4;
+  color: #033e78a4;
+  cursor: pointer;
+  transition: .5s;
+  z-index: 4;
+  border-radius: 10px;
+}
+
+/* Cor ao passar o mouse sobre o botão contato */
+header .btn-contato button:hover{
+  background-color: #033e78a4;
+  color: #fff;
+}
+
+header .interface{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img{
+  max-width: 43px;
+}
+
+/* Estilo do menu dinamico */
+
+/* Sombra na base e sombra do menu depois do scroll */
+header.rolar{
+  background-color: #b1b1b198;
+  box-shadow: 0 0 8px #00000061;
+}
+
+/* cor do menu depois do scrool  */
+header.rolar .menu-desktop nav ul li a{
+  color: #033e78a4;
+}
+
+header.rolar .btn-contato button{
+  border: 2px solid #033e78a4;
+  color: #033e78a4;
+  border-radius: 10px;
+}
+
+header.rolar .btn-contato button:hover{
+  background-color: #033e78a4;
+  color: #fff;
+}
+
+/* Fim do Estilo do menu dinamico */
+
+header .menu-desktop nav ul{
+  list-style-type: none;
+} 
+
+header .menu-desktop nav ul li{
+  display: inline-block;
+  margin: 0 40px;
+}
+
+/* opções de fonte,cor da opções do menu */
+header .menu-desktop nav ul li a{
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+  font-weight: 600;
+  color: #033E78 ;
+  font-size: 20px;
+}
+
+/* Destaque quando o mouse passar por cima da opção */
+header .menu-desktop nav a:hover{
+  transform: scale(2.02);
+  color: #033E78 ;
+}    
+
+/* Tamando do botão cover*/
+header .btn-contato button{
+  width: 140px;
+  height: 50px;
+}
+
+/* Estilo do hero - Pagina home */
+section.hero-site{
+  height: 98vh;
+  background-image: url('../img/img-inicio.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff; 
+}
+
+section.hero-site .interface{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+section.hero-site .txt-hero h1{
+  font-size: 3em;
+  line-height: 45px;
+  font-weight: 170;
+  text-align: center;
+}
+
+section.hero-site .txt-hero h1 span{
+  display: block;
+  font-weight: 800;
+  text-align: center;
+}
+
+section.hero-site .txt-hero p{
+  font-size: 22px;
+  font-weight: 500;
+  margin: 20px 0;
+  text-align: center;
+}
+
+section.hero-site .txt-hero p span{
+  display: block;
+}
+
+.hero-site button{
+  width: 220px;
+  height: 60px;
+  font-size: 20px;
+}
+section.hero-site .img-bg{
+  display: block; 
+  margin: 0 auto; 
+  max-width: 620px;
+  height: auto;
+  border-radius: 20px;
+}
+/* ------------ */
+
+/* Estilo sobre ----------------------------------------------------------*/
+
+/* Estilo sobre */
+section.sobre-site{
+  padding: 10px 0;
+  background-color: #e3e3e3;
+}
+
+section.sobre-site .img-itens-sobre img{
+  display: block; 
+  margin: 0 auto; 
+  max-width: 620px;
+  height: auto;
+  border-radius: 20px;
+}
+
+section.sobre-site .txt-itens-sobre p{
+  margin: 10px 0;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: 5rem;
+}
+
+section.sobre-site .txt-itens-sobre p span{
+  font-size: 17px;
+  font-weight: 700;
+}
+
+section.sobre-site .title {
+  font-size: 1.8rem;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  margin-top: 10rem;
+}
+
+section.sobre-site .title span {
+  font-size: 1.8rem;
+  color: #525151;
+  text-transform: uppercase;
+}
+
+section.sobre-site .linha-separa-sobre{
+  margin-top: 7rem;;
+  border-top: 1px solid #000000;
+}
+
+
+
+
+
+
+
+
+/*----------------------------*/
+
+
+/*  Estilo da selecao */
+
+/* section.selecao-site{
+  padding: 5px 0;
+  height: 68vh;
+  background-image: url('../img/img-inicio.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff ;
+} */
+
+section.selecao-site{
+  padding: 170px 0;
+  background-color: #e3e3e3;
+}
+
+section.selecao-site .itens-container-selecao{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  margin-bottom: 20px;
+}
+
+section.selecao-site .txt-itens-selecao p{
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+section.selecao-site .itens-container-selecao .img-itens-selecao img{
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+}
+ 
+section.selecao-site .itens-container-selecao .txt-itens-selecao h3{
+  font-size: 2.5em;
+  line-height: 50px;
+  margin-bottom: 20px;
+  color: #525151;
+}
+
+section.selacao-site .itens-container-selecao .txt-itens-selecao h3 span{
+  font-weight: 300;
+  color: black
+}
+
+section.selecao-site .txt-itens-selecao-item-3 p{
+  margin: 10px 0;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+section.selecao-site .itens-container-selecao .img-itens-selecao-item-3 img{
+  max-width: 420px;
+  border-radius: 20px;
+}
+
+section.selecao-site .itens-container-selecao .txt-itens-selecao-item-3 h3{
+  font-size: 2.5em;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+section.selecao-site .itens-container-selecao .txt-itens-selecao-item-3 h3 span{
+  font-weight: 300;
+}
+
+section.selecao-site .linha-separa-selecao{
+  margin-top: 3rem;;
+  border-top: 1px solid #000000;
+}
+/*----------------------------*/
+
+
+/* Estilo do botão do menu mobile */
+header .btn-menu-mob {
+  display: none;
+  position: relative;
+  z-index: 6;
+}
+
+/* box do menu-mobile */
+header .btn-menu-mob div{
+  background-color: #fff;
+  height: 3px;
+  margin: 10px 0;
+  transition: .2s;
+}
+
+/* Tamanho da primeira horinzontal barra do menu hamburguer */
+header .btn-menu-mob .line-menumob-1{
+  width: 30px;
+}
+
+/* Tamanho da segunda barra horinzontal do menu hamburguer */
+header .btn-menu-mob .line-menumob-2{
+  width: 30px;
+}
+
+/* Tamanho da terceira barra horinzontal do menu hamburguer */
+header .btn-menu-mob .line-menumob-3{
+  width: 30px;
+}
+
+/* Cor de fundo do menu hamburguer */
+header.rolar .btn-menu-mob div {
+  background-color: #033e78a4;
+}
+
+/* Cor da primeira barra horinzontal do menu hamburguer */
+header .btn-menu-mob .line-menumob-1.ativo1{
+  background-color: #ff0000;
+  width: 30px; 
+}
+
+/* Cor da segunda barra horinzontal do menu hamburguer */
+header .btn-menu-mob .line-menumob-2.ativo2{
+  width: 30px;
+  background-color: #ff0000;
+}
+
+/* Cor da terceira barra horinzontal do menu hamburguer */
+header .btn-menu-mob .line-menumob-3.ativo3{
+  width: 30px;
+  background-color: #ff0000;
+}
+
+/* ------------ */
+
+/* Estilo do menu mobile */
+header .menu-mobile{
+  width: 0%;
+  height: 0vh;
+  background-color: #000000b9;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  transition: .5s;
+  visibility: hidden;
+}
+
+header .menu-mobile nav{
+  width: 100%;
+}
+
+header .menu-mobile nav ul{
+  list-style-type: none;
+}
+
+header .menu-mobile nav ul a{
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffee00;
+  padding: 20px 0px;
+  display: block; 
+  line-height: 18px;
+  transition: .5s;
+}
+
+header .menu-mobile nav ul a:hover{
+  background-color: #ffffff8e;
+  color: #020202;
+}    
+
+header .menu-mobile.abrir{
+  visibility: visible;
+  width: 100%;
+  height: 100vh;
+}
+
+body.no-overflow{
+  overflow: hide;
+}
+
+
+
+
+
+
+/* Estilo de botões de contato */
+section.contato{
+  background-color: #f80000;
+  padding: 205px 0;
+  
+
+  background-image: url('../img/img-inicio.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+article.txt-contato, .icons-contato{
+  display: inline-block;
+  width: 50%;
+  margin-right: -4px;
+  vertical-align: middle;
+  color: white;
+}
+
+section.contato .txt-contato h3{
+  font-size: 2.5em;
+  line-height: 50px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+section.contato .txt-contato h3 span{
+  display: block;
+  font-weight: 700;
+}
+
+section.contato .icons-contato a{
+  text-decoration: none;
+}
+
+section.contato .icons-contato button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  height: 60px;
+  margin: 0 auto 20px auto;
+  padding: 0 60px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: .5s;
+}
+
+/* Tamanho e cor dois icones */
+section.contato .icons-contato button i{
+  font-size: 20px;
+  color : rgb(255, 255, 255)
+}
+
+section.contato .icons-contato button p{
+    color : rgb(255, 255, 255)
+}
+section.contato .icons-contato button:hover{
+  background-color: #000;
+}
+
+section.contato .icons-contato button:hover i,section.contato .icons-contato button:hover p{
+  color: #fff;
+}
+
+/* Estilo rodape */
+footer{
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+
+
+  background-image: url('../img/img-inicio.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+
+
+}
+
+footer .top-footer button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+footer .top-footer button:hover{
+  background-color: #fff;
+  color : #000;
+}
+
+footer .middle-footer{
+  margin: 20px 0;
+}
+
+footer .middle-footer a{
+  color: #fff;
+  margin: 0 15px;
+}
+
+footer .bottom-footer {
+  border-top: 1px solid #fff;
+}
+
+footer .bottom-footer p{
+  color: #fff;
+  margin-top: 10px;
+}
+
+
